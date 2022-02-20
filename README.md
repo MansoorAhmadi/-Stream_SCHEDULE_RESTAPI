@@ -1,6 +1,5 @@
 # -Stream_SCHEDULE_RESTAPI
 
-
 1: Start.spring.io
 
 	1.1: We will need to get the pre-requisites for our project
