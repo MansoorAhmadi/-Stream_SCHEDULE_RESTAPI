@@ -1,7 +1,7 @@
 # -Stream_SCHEDULE_RESTAPI
 
 
-1: IntelliJ Community
+1: IntelliJ Community:
 
 	1.1: We will need to get the pre-requisites for our project
 
@@ -33,11 +33,32 @@
 
 
 
-2: Stream_SCHDEULE
+2: Stream_SCHDEULE:
 
 	2.1: Stream_Schedule project is ready with the pom file and dependencies. To make sure nothing is messy, we run the webApplication.class where it should run successfully on port 8080
 
 		*StreamScheduleApplication.java
+		
+		*IT SHOULD RUN SUCCESSFULLY
+
+
+
+3: Data Model:
+
+	3.1: Data Model - We create our internal channel data model, @POJO classes
+
+		*MutableLiveStream.java
+
+
+
+
+
+
+
+
+
+
+
 
  
 
