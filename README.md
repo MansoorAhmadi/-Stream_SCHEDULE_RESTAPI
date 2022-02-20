@@ -27,7 +27,7 @@
 	1.3: Dependencies - the dependencies we need to import in order to use functionalities
 
 		*Spring-Web
-		*Bean Validation //Validating user input for handling the logic
+		*Bean Validation 		//Validating user input for handling the logic
 
 		*FINISH
 
@@ -47,7 +47,27 @@
 
 	3.1: Data Model - We create our internal channel data model, @POJO classes
 
-		*MutableLiveStream.java
+		*MutableLiveStream.java		//attributes id, titel, description, url, startDate, endDate
+		*ImmutableLiveStream.java		//CONSTANT FINAL attribute attributes id, titel, description, url, startDate, endDate
+		
+
+		*JAVA 17 FEATURE
+		*LiveStreamRecord		//a record to make immutable class  
+
+
+
+
+Test Cases:
+
+1: Data Model:
+
+	1.1: Data Model Test - test cases to test the Mutable Live Stream Class getters/setters & instantiation
+
+		*LiveStreamTest.java		//public void mutableTest();
+
+
+
+
 
 
 
