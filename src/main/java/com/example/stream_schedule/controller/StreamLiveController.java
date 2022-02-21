@@ -1,6 +1,7 @@
 package com.example.stream_schedule.controller;
 
 import com.example.stream_schedule.model.LiveStreamRecord;
+import com.example.stream_schedule.repository.StreamLiveRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,6 +19,17 @@ import java.util.List;
 @RequestMapping("/stream")
 public class StreamLiveController {
 
+
+    /**
+     * dependency injection and initialisation
+     */
+    private final StreamLiveRepository repository;
+
+    public StreamLiveController(StreamLiveRepository repository) {
+        this.repository = repository;
+    }
+
+
     /**
      * @param - a special @GetMapping request to return the find all value
      * GET - http://localhost:8080/stream
@@ -25,7 +37,7 @@ public class StreamLiveController {
      */
     @GetMapping
     public List<LiveStreamRecord> findAll(){
-        return null;
+        return repository.findAll();
     }
 
 

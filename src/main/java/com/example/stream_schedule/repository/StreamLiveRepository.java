@@ -2,12 +2,14 @@ package com.example.stream_schedule.repository;
 
 import com.example.stream_schedule.exception.LiveStreamNotFoundException;
 import com.example.stream_schedule.model.LiveStreamRecord;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+@Component
 public class StreamLiveRepository {
 
     /**
